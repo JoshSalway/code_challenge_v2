@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 class Contact extends Model
 {
@@ -25,6 +26,10 @@ class Contact extends Model
         'company_name',
         'position',
         'email',
-        'phone_number',
     ];
+
+    public function phones(): MorphToMany
+    {
+        return $this->morphToMany(Phone::class, 'phoneable');
+    }
 }

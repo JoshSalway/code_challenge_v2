@@ -23,7 +23,6 @@ class ContactFactory extends Factory
             'company_name' => $this->faker->company,
             'position' => $this->faker->jobTitle,
             'email' => $this->faker->unique()->safeEmail,
-            'phone_number' => $this->faker->phoneNumber,
         ];
     }
 }

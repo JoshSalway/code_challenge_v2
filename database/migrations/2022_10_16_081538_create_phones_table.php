@@ -13,17 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create('phones', function (Blueprint $table) {
             $table->id();
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->date('date_of_birth');
-            $table->string('company_name');
-            $table->string('position');
-            $table->string('email')->nullable();
+            $table->string('number');
+            $table->string('type')->nullable();
             $table->timestamps();
         });
 
+        Schema::create('phoneables', function (Blueprint $table) {
+            $table->foreignId('phone_id');
+            $table->morphs('phoneable');
+        });
     }
 
     /**
@@ -33,6 +33,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contacts');
+        Schema::dropIfExists('phones');
+        Schema::dropIfExists('phoneables');
     }
 };

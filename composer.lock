@@ -758,16 +758,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.16.32",
+            "version": "v2.16.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/admin.git",
-                "reference": "15002ff37a3554cd125365e8fd72ae150fe9ba85"
+                "reference": "1dad111e292f2177af7464ae6eff4d8bf8096717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/admin/zipball/15002ff37a3554cd125365e8fd72ae150fe9ba85",
-                "reference": "15002ff37a3554cd125365e8fd72ae150fe9ba85",
+                "url": "https://api.github.com/repos/filamentphp/admin/zipball/1dad111e292f2177af7464ae6eff4d8bf8096717",
+                "reference": "1dad111e292f2177af7464ae6eff4d8bf8096717",
                 "shasum": ""
             },
             "require": {
@@ -817,20 +817,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-10-13T14:39:42+00:00"
+            "time": "2022-10-15T08:17:31+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v2.16.32",
+            "version": "v2.16.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
-                "reference": "b66e2541033bd6c414ba110fde2a9b219522a4c9"
+                "reference": "73cd960266e682b08eab55c109247aeae8a65887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/forms/zipball/b66e2541033bd6c414ba110fde2a9b219522a4c9",
-                "reference": "b66e2541033bd6c414ba110fde2a9b219522a4c9",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/73cd960266e682b08eab55c109247aeae8a65887",
+                "reference": "73cd960266e682b08eab55c109247aeae8a65887",
                 "shasum": ""
             },
             "require": {
@@ -875,11 +875,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2022-10-13T14:39:41+00:00"
+            "time": "2022-10-15T08:17:24+00:00"
         },
         {
             "name": "filament/notifications",
-            "version": "v2.16.32",
+            "version": "v2.16.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -929,7 +929,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v2.16.32",
+            "version": "v2.16.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -979,7 +979,7 @@
         },
         {
             "name": "filament/tables",
-            "version": "v2.16.32",
+            "version": "v2.16.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
@@ -6215,16 +6215,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.4.1",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f"
+                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/264dce589e7ce37a7ba99cb901eed8249fbec92f",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
+                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
                 "shasum": ""
             },
             "require": {
@@ -6239,15 +6239,19 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
+                "phpunit/phpunit": "^7.5.20 || ^8.5.30 || ^9.5.25"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true
+                },
                 "branch-alias": {
-                    "dev-master": "5.4-dev"
+                    "dev-master": "5.5-dev"
                 }
             },
             "autoload": {
@@ -6279,7 +6283,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.1"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.5.0"
             },
             "funding": [
                 {
@@ -6291,7 +6295,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-12T23:22:04+00:00"
+            "time": "2022-10-16T01:01:54+00:00"
         },
         {
             "name": "voku/portable-ascii",
